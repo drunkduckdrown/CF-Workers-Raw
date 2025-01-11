@@ -2,6 +2,7 @@ let token = "";
 export default {
 	async fetch(request ,env) {
 		const url = new URL(request.url);
+		url.pathname = url.pathname.replace(/^\/myimg/, '');
 		if(url.pathname !== '/'){
 			let githubRawUrl = 'https://raw.githubusercontent.com';
 			if (new RegExp(githubRawUrl, 'i').test(url.pathname)){
