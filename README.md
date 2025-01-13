@@ -1,3 +1,6 @@
+2025-01-14，修改：
+让Cloudflare CDN缓存图床内容。
+
 
 2025-01-11，修改：
 支持worker路由的访问，如www.example.xyz/myimg/*
